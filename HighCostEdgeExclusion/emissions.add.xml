@@ -1,0 +1,3 @@
+<additional>
+    <edgeData id="1" type="emissions" freq="10" file="emissions.xml" excludeEmpty="true"/>
+</additional>

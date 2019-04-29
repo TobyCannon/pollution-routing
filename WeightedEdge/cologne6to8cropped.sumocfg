@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Apr 10 15:35:28 2018 by SUMO Version v0_32_0+1044-0722ada
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="cologneCropped.net.xml"/>
+	<route-files value="croppedTrips.trips.xml"/>
+        <additional-files value="vtypes.add.xml, emissions.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="21600"/>
+    </time>
+
+    <routing>
+	<astar.landmark-distances value="cologne_landmark_distances.txt"/>
+	<device.rerouting.adaptation-interval value="0"/>
+        <device.rerouting.threads value="8"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <log value="cologne6to8.log"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
